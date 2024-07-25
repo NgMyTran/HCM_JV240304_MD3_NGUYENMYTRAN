@@ -50,20 +50,26 @@ public class LaptopType {
 
     public static LaptopType inputData() {
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter Type Name: ");
-        String typeName = sc.nextLine();
-
-        System.out.print("Enter Description: ");
-        String description = sc.nextLine();
-
-        if (typeName == null || typeName.trim().isEmpty()) {
-            System.out.println("Tên loại laptop(mô tả) không được trống. Không thể thêm loại laptop.");
-            return null;
+        String typeName, description;
+        while (true) {
+            System.out.print("Enter Type Name: ");
+            typeName = sc.nextLine().trim();
+            if (!typeName.isEmpty()) {
+                break;
+            }
+            System.out.println("Type Name cannot be blank. Please enter a valid Type Name.");
         }
-
+        while (true) {
+            System.out.print("Enter Description: ");
+            description = sc.nextLine().trim();
+            if (!description.isEmpty()) {
+                break;
+            }
+            System.out.println("Description cannot be blank. Please enter a valid Description.");
+        }
         return new LaptopType(typeName, description);
     }
+
 
     public void updateData() {
         Scanner sc = new Scanner(System.in);
@@ -76,7 +82,17 @@ public class LaptopType {
     }
 
 
-    public void displayData() {
-        System.out.printf("Type ID: %d | Type Name: %s | Description: %s%n", typeId, typeName, description);
+    public char displayData() {
+        System.out.printf("Type ID: %d | Type Name: %s | Description: %s | isDelete: %s%n" + '\'', typeId, typeName, description, isDeleted);
+        return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "LaptopType {" +
+                "typeId=" + typeId +
+                "| typeName='" + typeName + '\'' +
+                '}';
+
     }
 }

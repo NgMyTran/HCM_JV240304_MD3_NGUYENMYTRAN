@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81217c0b-f65e-4262-9f0e-fadb6119d94d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HCM_JV240304_BS_NguyenMyTran.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/LaptopType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/run/LaptopManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/LaptopType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/LaptopType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/run/LaptopManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/LaptopManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NgMyTran&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NgMyTran/HCM_JV240304_MD3_NGUYENMYTRAN.git&quot;,
+    &quot;accountId&quot;: &quot;fe54fcae-e653-435b-a501-830912eed06e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -46,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/TRAN/INTELLIJ/Intel-MD3/Bt_MD3",
+    "last_opened_file_path": "C:/Users/TRAN/INTELLIJ/Intel-MD3/Tran_PROJECT_MD3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721872577257</updated>
       <workItem from="1721872578398" duration="1000" />
-      <workItem from="1721872739071" duration="21790000" />
+      <workItem from="1721872739071" duration="41697000" />
+      <workItem from="1721921628174" duration="3854000" />
     </task>
     <servers />
   </component>
@@ -87,6 +94,33 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/entity/Laptop.java</url>
+          <line>251</line>
+          <properties class="entity.Laptop" method="updateData">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/run/LaptopManagement.java</url>
+          <line>57</line>
+          <properties class="run.LaptopManagement" method="laptopTypeMenu">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/run/LaptopManagement.java</url>
+          <line>193</line>
+          <properties class="run.LaptopManagement" method="laptopMenu">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
