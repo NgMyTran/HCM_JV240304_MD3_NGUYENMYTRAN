@@ -22,15 +22,6 @@ public class Laptop {
         this.laptopName = laptopName;
         this.isDeleted = isDeleted;
     }
-//    public Laptop(String laptopId,String laptopName, String description, int ram, double weight, LocalDate createAt, double laptopPrice, int typeId) {
-//        this.laptopId = laptopId;
-//        this.laptopName = laptopName;
-//        this.description = description;
-//        this.ram = ram;
-//        this.createAt = createAt;
-//        this.laptopPrice = laptopPrice;
-//        this.weight = weight;
-//    }
     public Laptop(String laptopId, String laptopName, String description, int ram, double weight, LocalDate createAt, double laptopPrice, LaptopType type) {
         this.laptopId = laptopId;
         this.laptopName = laptopName;
@@ -110,10 +101,6 @@ public class Laptop {
         return typeId;
     }
 
-//    public void setTypeId(int typeId) {
-//        this.typeId = typeId;
-//    }
-
     public void setTypeId(LaptopType typeId) {
         this.typeId = typeId;
     }
@@ -123,33 +110,33 @@ public class Laptop {
 
         String laptopId;
         while (true) {
-            System.out.print("Enter Type Name: ");
+            System.out.print("Enter Laptop Id: ");
              laptopId = sc.nextLine().trim();
             if (!laptopId.isEmpty()) {
                 break;
             }
-            System.out.println("Type Name cannot be blank. Please enter a valid Type Name.");
+            System.out.println("Laptop Name cannot be blank. Please enter a valid Type Name.");
         }
 
         String laptopName;
         while (true) {
-            System.out.print("Enter Type Name: ");
+            System.out.print("Enter Laptop Name: ");
              laptopName = sc.nextLine().trim();
             if (!laptopName.isEmpty()) {
                 break;
             }
-            System.out.println("Type Name cannot be blank. Please enter a valid Type Name.");
+            System.out.println("Laptop Name cannot be blank. Please enter a valid Type Name.");
         }
 
 
         String description;
         while (true) {
-            System.out.print("Enter Description: ");
+            System.out.print("Enter Laptop Description: ");
             description = sc.nextLine().trim();
             if (!description.isEmpty()) {
                 break;
             }
-            System.out.println("Description cannot be blank. Please enter a valid Description.");
+            System.out.println("Laptop Description cannot be blank. Please enter a valid Description.");
         }
 
         int ram;
@@ -328,15 +315,6 @@ public class Laptop {
                 break;
         }
         System.out.println("Update successful.");
-    }
-
-    private LaptopType findLaptopTypeById(String typeId) {
-        for (LaptopType laptopType : laptopTypes) {
-            if (laptopType != null && laptopType.getTypeId() == Integer.parseInt(typeId)) {
-                return laptopType;
-            }
-        }
-        return null;
     }
 
     public String displayData() {

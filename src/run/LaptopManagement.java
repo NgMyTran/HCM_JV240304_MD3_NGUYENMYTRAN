@@ -98,11 +98,9 @@ public class LaptopManagement {
             System.out.println("Chưa có loại laptop nào.");
             return;
         }
-
         for (LaptopType type : laptopTypes) {
             if (type != null && !type.isDeleted()) {
                 System.out.println(type.displayData());  // Display the type information
-
                 boolean hasLaptops = false;
                 for (Laptop laptop : laptops) {
                     if (laptop != null && laptop.getTypeId() != null && laptop.getTypeId().equals(type)) {
@@ -111,7 +109,6 @@ public class LaptopManagement {
                         hasLaptops = true;
                     }
                 }
-
                 if (!hasLaptops) {
                     System.out.println("Không có laptop nào thuộc loại này.");
                 }
@@ -193,16 +190,15 @@ public class LaptopManagement {
     //------------LAPTOP-MENU------------
     private static void laptopMenu() {
         Scanner sc = new Scanner(System.in);
-
         while (true) {
             System.out.println(
                             "╔════════════════════════════════════════════╗\n" +
-                            "║              LAPTOP_TYPE-MENU              ║\n" +
+                            "║                 LAPTOP-MENU                ║\n" +
                             "╠════════════════════════════════════════════╣\n" +
-                            "║  1. Hiển thị danh sách các loại laptop     ║\n" +
-                            "║  2. Thêm mới loại laptop                   ║\n" +
-                            "║  3. Cập nhật thông tin loại laptop         ║\n" +
-                            "║  4. Xóa loại Laptop                        ║\n" +
+                            "║  1. Hiển thị danh sách laptop              ║\n" +
+                            "║  2. Thêm mới laptop                        ║\n" +
+                            "║  3. Cập nhật thông tin laptop              ║\n" +
+                            "║  4. Xóa Laptop                             ║\n" +
                             "║  5. Thống kê số lượng laptop theo từng loại║\n" +
                             "║  6. Thoát                                  ║\n" +
                             "║  Lựa chọn của bạn:                         ║\n" +
@@ -251,6 +247,7 @@ public class LaptopManagement {
         if (sizeType == 0 || laptopTypes == null) {
             System.err.println("Chưa có loại laptop nào. Vui lòng thêm loại laptop trước.");
             laptopTypeMenu();
+            return;
         }
         Laptop newLaptop = Laptop.inputData();
         if (newLaptop == null) {
@@ -334,7 +331,6 @@ public class LaptopManagement {
                 }
             }
         }
-
         System.out.println("Số lượng laptop theo từng loại:");
         for (int i = 0; i < sizeType; i++) {
             if (!laptopTypes[i].isDeleted()) {

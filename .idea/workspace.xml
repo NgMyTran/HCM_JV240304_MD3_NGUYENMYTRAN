@@ -7,7 +7,6 @@
     <list default="true" id="81217c0b-f65e-4262-9f0e-fadb6119d94d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/LaptopType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/LaptopType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/run/LaptopManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run/LaptopManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/TRAN/INTELLIJ/Intel-MD3/Tran_PROJECT_MD3",
+    "last_opened_file_path": "C:/Users/TRAN/INTELLIJ/FT_JV240304_BS_NguyenMyTran",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,7 +79,8 @@
       <updated>1721872577257</updated>
       <workItem from="1721872578398" duration="1000" />
       <workItem from="1721872739071" duration="41697000" />
-      <workItem from="1721921628174" duration="3854000" />
+      <workItem from="1721921628174" duration="4737000" />
+      <workItem from="1721958087981" duration="1709000" />
     </task>
     <servers />
   </component>
@@ -95,14 +95,19 @@
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/entity/Laptop.java</url>
-          <line>251</line>
-          <properties class="entity.Laptop" method="updateData">
+          <line>108</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/run/LaptopManagement.java</url>
+          <line>190</line>
+          <properties class="run.LaptopManagement" method="laptopMenu">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="35" />
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/run/LaptopManagement.java</url>
@@ -111,16 +116,7 @@
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/run/LaptopManagement.java</url>
-          <line>193</line>
-          <properties class="run.LaptopManagement" method="laptopMenu">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
